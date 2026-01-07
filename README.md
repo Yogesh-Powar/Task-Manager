@@ -34,7 +34,7 @@ Users can create, view, edit, delete, and search tasks with a clean UI.
 
 1. Clone the repository
 ```bash
-git clone <your-github-repo-url>
+git clone https://github.com/Yogesh-Powar/task-manager
 
 2. Install dependencies
 npm install
