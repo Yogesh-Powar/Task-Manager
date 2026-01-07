@@ -10,7 +10,7 @@ Users can create, view, edit, delete, and search tasks with a clean UI.
 - Add new tasks
 - Edit existing tasks
 - Delete tasks with confirmation
-- Task status: To Do, In Progress, Done
+- Task status: **To Do**, **In Progress**, **Done**
 - Search tasks by title or description
 - SweetAlert confirmation & success popups
 - Sticky header and fixed sidebar
@@ -23,7 +23,8 @@ Users can create, view, edit, delete, and search tasks with a clean UI.
 
 - Angular
 - TypeScript
-- HTML / SCSS
+- HTML
+- SCSS
 - Angular Material
 - RxJS
 - SweetAlert2
@@ -32,17 +33,20 @@ Users can create, view, edit, delete, and search tasks with a clean UI.
 
 ## 📦 Installation & Run Locally
 
-1. Clone the repository
+1. **Clone the repository**
 
 git clone https://github.com/Yogesh-Powar/task-manager
 
-2. Install dependencies
+2. Navigate to project directory
+cd task-manager
+
+3. Install dependencies
 npm install
 
-3. Run the application
+4. Run the application
 ng serve
 
-4. Open browser and visit
+5. Open browser and visit
 http://localhost:4200
 
 
@@ -63,5 +67,3 @@ http://localhost:4200
 
 ### Search Task
 ![Search](screenshots/search-task.png)
-
-```bash
