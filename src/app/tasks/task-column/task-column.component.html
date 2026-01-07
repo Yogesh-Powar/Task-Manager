@@ -1,0 +1,13 @@
+<div class="column" [ngClass]="status">
+  <div class="column-header">
+    <mat-icon class="column-icon">
+      {{ status === 'todo' ? 'check_box_outline_blank' :
+      status === 'in-progress' ? 'hourglass_empty' :
+      'check_box' }}
+    </mat-icon>
+    <h3>{{ title }}</h3>
+  </div>
+
+  <app-task-card *ngFor="let task of tasks ?? []" [task]="task" (edit)="onEdit(task)">
+  </app-task-card>
+</div>

@@ -1,0 +1,49 @@
+<div class="task-board">
+
+  <!-- BOARD HEADER -->
+  <div class="board-header">
+    <!-- LEFT -->
+    <h2 class="title">Tasks</h2>
+
+    <!-- RIGHT ACTIONS -->
+    <div class="header-actions">
+      <button mat-icon-button class="icon-btn">
+        <mat-icon>undo</mat-icon>
+      </button>
+
+      <button mat-icon-button class="icon-btn">
+        <mat-icon>redo</mat-icon>
+      </button>
+
+      <button mat-icon-button class="icon-btn">
+        <mat-icon>people</mat-icon>
+      </button>
+
+      <button mat-icon-button class="icon-btn">
+        <mat-icon>filter_list</mat-icon>
+      </button>
+    </div>
+    <button mat-raised-button class="new-task-btn" (click)="openNewTask()">
+      <mat-icon>add</mat-icon>
+      New task
+    </button>
+
+  </div>
+
+  <!-- COLUMNS -->
+  <div class="board-columns">
+    <app-task-column title="To do" status="todo" [tasks]="todo$ | async" (edit)="openEditTask($event)">
+    </app-task-column>
+
+    <app-task-column title="In progress" status="in-progress" [tasks]="inProgress$ | async"
+      (edit)="openEditTask($event)">
+    </app-task-column>
+
+    <app-task-column title="Done" status="done" [tasks]="done$ | async" (edit)="openEditTask($event)">
+    </app-task-column>
+  </div>
+
+</div>
+
+<app-task-form *ngIf="showModal && selectedTask" [task]="selectedTask" (close)="closeModal()" (save)="saveTask($event)">
+</app-task-form>

@@ -1,0 +1,17 @@
+<div class="card" [ngClass]="'status-' + task.status">
+  <div class="card-top">
+    <img [src]="getAvatar(task)" alt="avatar" />
+
+    <div class="actions">
+      <button mat-icon-button class="edit-btn" matTooltip="Edit" matTooltipPosition="below" (click)="editTask()">
+        <mat-icon>edit</mat-icon>
+      </button>
+      <button mat-icon-button class="delete-btn" matTooltip="Delete" matTooltipPosition="below" (click)="deleteTask()">
+        <mat-icon>delete</mat-icon>
+      </button>
+    </div>
+  </div>
+
+  <h4>{{ task.title }}</h4>
+  <p>{{ task.description }}</p>
+</div>

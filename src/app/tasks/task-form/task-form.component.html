@@ -1,0 +1,35 @@
+<div class="overlay">
+  <div class="modal">
+    <h3>{{ task?.id ? 'Edit Task' : 'New Task' }}</h3>
+
+    <input name="title" placeholder="Title" [(ngModel)]="task!.title" required #title="ngModel" />
+
+    <small class="error" *ngIf="title.invalid && title.touched">
+      Title is required
+    </small>
+
+    <textarea name="description" placeholder="Description" [(ngModel)]="task!.description" required
+      #description="ngModel">
+    </textarea>
+
+    <small class="error" *ngIf="description.invalid && description.touched">
+      Description is required
+    </small>
+
+    <select name="status" [(ngModel)]="task!.status" required #status="ngModel">
+      <option *ngFor="let s of statuses" [value]="s">
+        {{ s }}
+      </option>
+    </select>
+
+    <small class="error" *ngIf="status.invalid && status.touched">
+      Status is required
+    </small>
+
+    <div class="actions">
+      <button mat-button class="cancel" (click)="close.emit()">Cancel</button>
+      <button mat-raised-button color="primary" class="save" (click)="submit(title, description, status)"
+        [disabled]="!isFormValid">Save</button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,69 @@
+.header {
+  height: 64px;
+  width: 100%;
+  background: #ffffff !important;
+  padding: 0 24px;
+  display: grid;
+  grid-template-columns: 350px 1fr 60px;
+  /* aligns with sidebar */
+  align-items: center;
+  border-bottom: 1px solid #e5e7eb;
+  position: fixed;
+  z-index: 1000;
+}
+
+/* CENTER search */
+.header-center {
+  width: 100% !important;
+}
+
+.search-field {
+  width: 800px;
+  margin-top: 5px;
+}
+
+/* Angular Material fixes */
+::ng-deep .search-field .mat-mdc-text-field-wrapper {
+  height: 44px;
+}
+
+::ng-deep .search-field .mat-mdc-form-field-flex {
+  align-items: center;
+}
+
+::ng-deep .search-field mat-icon {
+  color: #9ca3af;
+  font-size: 20px;
+}
+
+/* RIGHT avatar */
+.header-right {
+  display: flex;
+  margin-left: 75%;
+}
+
+.header-right img {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+}
+
+.notification-btn {
+  position: relative;
+  color: #475569;
+}
+
+/* Red dot */
+.notification-btn .dot {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  width: 8px;
+  height: 8px;
+  background: #ef4444;
+  border-radius: 50%;
+}
+
+.notification-btn:hover {
+  background: rgba(0, 0, 0, 0.04);
+}
