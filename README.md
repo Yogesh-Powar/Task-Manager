@@ -44,3 +44,23 @@ ng serve
 
 4. Open browser and visit
 http://localhost:4200
+
+
+
+## 📸 Screenshots
+
+### Dashboard
+![Dashboard](screenshots/task-dashboard.png)
+
+### Add New Task
+![Add Task](screenshots/add-task-modal.png)
+
+### Edit Task
+![Edit Task](screenshots/edit-task-modal.png)
+
+### Delete Confirmation
+![Delete](screenshots/delete-confirmation.png)
+
+### Search Task
+![Search](screenshots/search-task.png)
+
