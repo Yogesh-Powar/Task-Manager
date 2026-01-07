@@ -37,13 +37,13 @@ Users can create, view, edit, delete, and search tasks with a clean UI.
 
 git clone https://github.com/Yogesh-Powar/task-manager
 
-2. Navigate to project directory -
+2. Navigate to project directory:-
 cd task-manager
 
-3. Install dependencies -
+3. Install dependencies:-
 npm install
 
-4. Run the application -
+4. Run the application:-
 ng serve
 
 5. Open browser and visit
