@@ -33,7 +33,7 @@ Users can create, view, edit, delete, and search tasks with a clean UI.
 ## 📦 Installation & Run Locally
 
 1. Clone the repository
-```bash
+
 git clone https://github.com/Yogesh-Powar/task-manager
 
 2. Install dependencies
@@ -64,3 +64,4 @@ http://localhost:4200
 ### Search Task
 ![Search](screenshots/search-task.png)
 
+```bash
